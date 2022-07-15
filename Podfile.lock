@@ -1,0 +1,76 @@
+PODS:
+  - CenteredCollectionView (2.2.2)
+  - IQKeyboardManagerSwift (6.5.9)
+  - JMMaskTextField (0.1.0)
+  - KeychainAccess (4.2.2)
+  - Kingfisher (7.1.2)
+  - LMDFloatingLabelTextField (0.8)
+  - PanModal (1.2.7)
+  - PromiseKit (6.15.3):
+    - PromiseKit/CorePromise (= 6.15.3)
+    - PromiseKit/Foundation (= 6.15.3)
+    - PromiseKit/UIKit (= 6.15.3)
+  - PromiseKit/CorePromise (6.15.3)
+  - PromiseKit/Foundation (6.15.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.15.3):
+    - PromiseKit/CorePromise
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+  - SnapKit (5.6.0)
+  - Toast-Swift (5.0.1)
+  - Wormholy (1.6.5)
+  - ZLPhotoBrowser (4.3.5):
+    - ZLPhotoBrowser/Core (= 4.3.5)
+  - ZLPhotoBrowser/Core (4.3.5)
+
+DEPENDENCIES:
+  - CenteredCollectionView
+  - IQKeyboardManagerSwift
+  - JMMaskTextField
+  - KeychainAccess
+  - Kingfisher
+  - LMDFloatingLabelTextField
+  - PanModal
+  - PromiseKit (~> 6.8)
+  - SDWebImage (~> 5.0)
+  - SnapKit (~> 5.6.0)
+  - Toast-Swift (~> 5.0.1)
+  - Wormholy
+  - ZLPhotoBrowser
+
+SPEC REPOS:
+  trunk:
+    - CenteredCollectionView
+    - IQKeyboardManagerSwift
+    - JMMaskTextField
+    - KeychainAccess
+    - Kingfisher
+    - LMDFloatingLabelTextField
+    - PanModal
+    - PromiseKit
+    - SDWebImage
+    - SnapKit
+    - Toast-Swift
+    - Wormholy
+    - ZLPhotoBrowser
+
+SPEC CHECKSUMS:
+  CenteredCollectionView: a9217908a698c386cbb98af11b596da48900b908
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  JMMaskTextField: ceb969a49a313663a041c6413a0284d921f65ba4
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  LMDFloatingLabelTextField: 7eda8d7d6fa6ccf38bab666fd5e6f0e680f2a373
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
+  ZLPhotoBrowser: 329ce19ac36da8fa9a163e878f88479bf1a11461
+
+PODFILE CHECKSUM: 5c35bee8d9ddcdb32be66a9d2d8ea8a405bb6796
+
+COCOAPODS: 1.11.2
