@@ -22,6 +22,7 @@ class SignUpCodeController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     
+    //timer
     var repeatSend = false
     var timer = Timer()
     var seconds = 60
@@ -39,7 +40,7 @@ class SignUpCodeController: UIViewController {
     func setupUI(){
         phoneLabel.text = JMStringMask.initWithMask("+0 (000) 000-00-00")?.maskString(userPhone)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(sendRepeatTimer), userInfo: nil, repeats: true)
-        nextButton.setOval()
+        nextButton.setSmallRadius()
     }
     
     // MARK: BACK TO PHONE
@@ -108,17 +109,12 @@ class SignUpCodeController: UIViewController {
                     try Constants.keychain.set((data.data?.tokens?.refresh?.value)!, key: "refreshToken")
                 }
                 
-                print("registered")
-                
                 self.spinner.stopAnimating()
                 UserDefaults.standard.set(true, forKey: "isRegistration")
                     let nextSBoard = UIStoryboard(name: "TabBar", bundle: .main)
                     let vc = nextSBoard.instantiateViewController(withIdentifier: "TabBarVC")
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true, completion: nil)
-                
-                
-                
             } else {
                 self.spinner.stopAnimating()
                 self.view.makeToast("\(data.errorDescription ?? "")")

@@ -33,6 +33,15 @@ struct SignUpModel{
         let url = Constants.baseURL.appendingPathComponent("/tels/verify/")
         return CoreNetwork.request(method: .POST(url: url, body: data!))
     }
+    
+    // add doc photo
+    static func uploadDocumentPhoto(image: Data) -> Promise<UserResponse>{
+        let url: URL = Constants.baseURL
+            .appendingPathComponent("/profile/passport-photo/")
+        let media = Media(with: image, forKey: "image", mediaType: .image)
+        let configuration = MultipartRequestConfiguration(url: url, media: [media], parameters: [:])
+        return CoreNetwork.request(method: .MultipartPUT(configuration: configuration))
+    }
 }
 
 

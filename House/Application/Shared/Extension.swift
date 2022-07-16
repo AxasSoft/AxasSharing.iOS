@@ -73,7 +73,7 @@ extension UIView {
         layer.cornerRadius = self.frame.size.height / 2
     }
     
-    func addSmallRadius() {
+    func setSmallRadius() {
         layer.cornerRadius = 5
     }
     
@@ -95,10 +95,10 @@ extension UIView {
     
     func addGreyShadow() {
         layer.masksToBounds = false
-        layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
+        layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
         layer.shadowOpacity = 1
-        layer.shadowOffset = CGSize(width: 7, height: 10)
-        layer.shadowRadius = 17
+        layer.shadowOffset = CGSize(width: 5, height: 8)
+        layer.shadowRadius = 7
     }
     
     func addHardGreyShadow() {

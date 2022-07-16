@@ -7,12 +7,14 @@
 
 import UIKit
 
-class MainController: UIViewController {
+class SaleController: UIViewController {
+    
+    @IBOutlet weak var partnerButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        partnerButton.setSmallRadius()
     }
     
 

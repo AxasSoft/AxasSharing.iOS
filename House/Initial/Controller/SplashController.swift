@@ -18,7 +18,7 @@ class SplashController: UIViewController {
             sleep(3)
             var sBoard = UIStoryboard(name: "SignUp", bundle: .main)
             
-            if UserDefaults.standard.bool(forKey: "isRegistered"){
+            if UserDefaults.standard.bool(forKey: "isRegistration"){
                 sBoard = UIStoryboard(name: "TabBar", bundle: .main)
             }
             
@@ -28,8 +28,6 @@ class SplashController: UIViewController {
             vc?.modalTransitionStyle = .crossDissolve
             self.present(vc!, animated: true, completion: nil)
         }
-//        UIView.animate(withDuration: 1.5, delay: 0.5, options: .curveEaseIn, animations: {
-//            self.logo.alpha = 1
-//        })
+
     }
 }

@@ -15,8 +15,6 @@ class SignUpController: UIViewController {
     @IBOutlet weak var checkboxButton: UIButton!
     @IBOutlet weak var policyButton: UIButton!
     @IBOutlet weak var nextbutton: UIButton!
-    
-    
     var checkPolicy = false
 
     override func viewDidLoad() {
@@ -29,11 +27,12 @@ class SignUpController: UIViewController {
     }
     
     func setupUI(){
-        phoneTF.setOval()
-        nextbutton.setOval()
+        phoneTF.setSmallRadius()
+        phoneTF.addGreyShadow()
+        nextbutton.setSmallRadius()
     }
 
-    
+    //MARK: POLICY
     @IBAction func confirmPolicy(_ sender: UIButton){
         if checkPolicy {
             checkboxButton.setImage(UIImage(systemName: "square"), for: .normal)
@@ -42,6 +41,12 @@ class SignUpController: UIViewController {
         }
         checkPolicy = !checkPolicy
     }
+    
+    
+    @IBAction func showPolicy(_ sender: UIButton){
+        UIApplication.shared.open(NSURL(string: "http://www.support.axas.ru/policy.html")! as URL)
+    }
+    
 
     //MARK: PHONE LOGIN
     @IBAction func signIn(_ sender: UIButton!){
@@ -56,11 +61,7 @@ class SignUpController: UIViewController {
         } else {
             self.view.makeToast("Необходимо принять условия пользовательского соглашения")
         }
-        
-        
     }
-    
-    
     
     //MARK: PREPARE SEGUE
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

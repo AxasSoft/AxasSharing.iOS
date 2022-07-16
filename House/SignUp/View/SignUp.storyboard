@@ -44,7 +44,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 (999) 123-45-67" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ru8-qn-ORr">
                                         <rect key="frame" x="7" y="18.5" width="222.5" height="29"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="поступит звонок с незнакомого номера" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXA-O9-Xfj">
@@ -90,8 +90,8 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0 0 0 0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faq-GN-bS0" customClass="JMMaskTextField">
                                 <rect key="frame" x="133" y="415" width="148.5" height="59"/>
-                                <color key="tintColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <color key="textColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <userDefinedRuntimeAttributes>
@@ -108,7 +108,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="1fb-iE-DmQ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="tg3-dT-xol"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="Text"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="chevron.left" catalog="system"/>
                                 <connections>
@@ -117,7 +117,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G1n-4n-U40"/>
-                        <color key="backgroundColor" name="BarBackground"/>
+                        <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="faq-GN-bS0" firstAttribute="top" secondItem="NmL-2p-887" secondAttribute="bottom" constant="24" id="5MZ-l1-5ng"/>
                             <constraint firstItem="dXU-r9-BuO" firstAttribute="top" secondItem="G1n-4n-U40" secondAttribute="top" constant="16" id="DA8-Io-hmR"/>
@@ -184,7 +184,7 @@
                                         <color key="tintColor" name="AccentColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal">
-                                            <imageReference key="image" image="square" catalog="system" symbolScale="large"/>
+                                            <imageReference key="image" image="square" catalog="system" symbolScale="default"/>
                                         </state>
                                         <connections>
                                             <action selector="confirmPolicy:" destination="5eg-vF-M0f" eventType="touchUpInside" id="F8C-Zs-J5V"/>
@@ -209,13 +209,16 @@
                                                 <state key="normal" title="пользовательского соглашения">
                                                     <color key="titleColor" name="AccentColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="showPolicy:" destination="5eg-vF-M0f" eventType="touchUpInside" id="42j-0F-8fg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="c9Q-Fw-4Yy">
-                                <rect key="frame" x="52" y="364" width="310" height="70"/>
+                                <rect key="frame" x="52" y="364" width="310" height="82"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Укажите номер телефона" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvF-jx-vvY">
                                         <rect key="frame" x="68.5" y="0.0" width="173" height="17"/>
@@ -224,10 +227,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XfK-FA-eKl" customClass="JMMaskTextField">
-                                        <rect key="frame" x="0.0" y="30" width="310" height="40"/>
-                                        <color key="backgroundColor" name="LightGreen"/>
+                                        <rect key="frame" x="0.0" y="30" width="310" height="52"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Swc-kt-qAp"/>
+                                            <constraint firstAttribute="height" constant="52" id="Swc-kt-qAp"/>
                                         </constraints>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -244,7 +247,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N2d-4E-9nP"/>
-                        <color key="backgroundColor" name="BarBackground"/>
+                        <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="c9Q-Fw-4Yy" firstAttribute="top" secondItem="N2d-4E-9nP" secondAttribute="top" constant="320" id="4Ot-od-6QB"/>
                             <constraint firstItem="7w2-Kw-sei" firstAttribute="top" secondItem="UX0-ZZ-XfO" secondAttribute="bottom" constant="42" id="CTh-dh-amk"/>
@@ -281,16 +284,13 @@
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
-            <color red="0.12549019607843137" green="0.59215686274509804" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.26666666666666666" green="0.58823529411764708" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="BarBackground">
-            <color red="0.97647058823529409" green="0.98039215686274506" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="LightGreen">
-            <color red="0.87450980392156863" green="1" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Background">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text">
-            <color red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.32199999690055847" green="0.32499998807907104" blue="0.35699999332427979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
