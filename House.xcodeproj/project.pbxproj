@@ -43,6 +43,9 @@
 		75C875F528818D6B00438A32 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C875F428818D6B00438A32 /* SignUpController.swift */; };
 		75C875F728818D7900438A32 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C875F628818D7900438A32 /* SignUpModel.swift */; };
 		75C875F92881910B00438A32 /* SignUpCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C875F82881910B00438A32 /* SignUpCodeController.swift */; };
+		75CA6E5E2882F33A00CD9C24 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA6E5D2882F33A00CD9C24 /* FilterController.swift */; };
+		75CA6E602882F6DC00CD9C24 /* ConveniencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA6E5F2882F6DC00CD9C24 /* ConveniencesTableViewCell.swift */; };
+		75CA6E622884251600CD9C24 /* RentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA6E612884251600CD9C24 /* RentTableViewCell.swift */; };
 		88126718BF497B37E4D6E875 /* Pods_House_HouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF51F76DD87805E55B45D260 /* Pods_House_HouseUITests.framework */; };
 		C02BB5DBC0F25C3E2276B96E /* Pods_HouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4856166C1C8772BEADF7C4BF /* Pods_HouseTests.framework */; };
 /* End PBXBuildFile section */
@@ -110,6 +113,9 @@
 		75C875F428818D6B00438A32 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		75C875F628818D7900438A32 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		75C875F82881910B00438A32 /* SignUpCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCodeController.swift; sourceTree = "<group>"; };
+		75CA6E5D2882F33A00CD9C24 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
+		75CA6E5F2882F6DC00CD9C24 /* ConveniencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConveniencesTableViewCell.swift; sourceTree = "<group>"; };
+		75CA6E612884251600CD9C24 /* RentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentTableViewCell.swift; sourceTree = "<group>"; };
 		7F3613ED0B6B513C4EF3A1A1 /* Pods-HouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseTests.release.xcconfig"; path = "Target Support Files/Pods-HouseTests/Pods-HouseTests.release.xcconfig"; sourceTree = "<group>"; };
 		DCCD052EF7443C1E5183AC86 /* Pods-HouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseTests.debug.xcconfig"; path = "Target Support Files/Pods-HouseTests/Pods-HouseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF51F76DD87805E55B45D260 /* Pods_House_HouseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_House_HouseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +220,9 @@
 				752EBDEC288225760053A06E /* AppartCollectionViewCell.swift */,
 				752EBDEE2882297E0053A06E /* OneAppartController.swift */,
 				752EBDF2288243E00053A06E /* MapAppartController.swift */,
+				75CA6E5D2882F33A00CD9C24 /* FilterController.swift */,
+				75CA6E5F2882F6DC00CD9C24 /* ConveniencesTableViewCell.swift */,
+				75CA6E612884251600CD9C24 /* RentTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -717,6 +726,7 @@
 				75C875DC288187C400438A32 /* NetCore.swift in Sources */,
 				75C875DE288187D300438A32 /* SharedStruct.swift in Sources */,
 				752EBDF3288243E00053A06E /* MapAppartController.swift in Sources */,
+				75CA6E5E2882F33A00CD9C24 /* FilterController.swift in Sources */,
 				75C875E3288187FD00438A32 /* Extension.swift in Sources */,
 				752EBDEF2882297E0053A06E /* OneAppartController.swift in Sources */,
 				752EBDCD2881E7430053A06E /* AppartController.swift in Sources */,
@@ -726,12 +736,14 @@
 				75C875F528818D6B00438A32 /* SignUpController.swift in Sources */,
 				752EBDE72882172D0053A06E /* ProfileModel.swift in Sources */,
 				75C875A82881878200438A32 /* AppDelegate.swift in Sources */,
+				75CA6E602882F6DC00CD9C24 /* ConveniencesTableViewCell.swift in Sources */,
 				752EBDEB288221540053A06E /* AppartTableViewCell.swift in Sources */,
 				752EBDDD2881E80C0053A06E /* HistoryController.swift in Sources */,
 				752EBDC32881A5510053A06E /* SaleController.swift in Sources */,
 				752EBDC72881A5670053A06E /* SaleModel.swift in Sources */,
 				75C875AA2881878200438A32 /* SceneDelegate.swift in Sources */,
 				752EBDF1288241A20053A06E /* SelectorAppartsController.swift in Sources */,
+				75CA6E622884251600CD9C24 /* RentTableViewCell.swift in Sources */,
 				752EBDD92881E7E70053A06E /* HistoryModel.swift in Sources */,
 				752EBDD32881E7770053A06E /* SearchModel.swift in Sources */,
 				75C875ED28818C7800438A32 /* SplashController.swift in Sources */,

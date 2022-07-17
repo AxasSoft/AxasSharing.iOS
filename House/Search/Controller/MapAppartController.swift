@@ -8,6 +8,7 @@
 import UIKit
 import MapKit
 import PromiseKit
+import SDWebImage
 
 class MapAppartController: UIViewController, MKMapViewDelegate {
     
@@ -24,6 +25,7 @@ class MapAppartController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var phone: UILabel!
+    @IBOutlet weak var photo: UIImageView!
     
     var appartId = 0
     
@@ -59,7 +61,7 @@ class MapAppartController: UIViewController, MKMapViewDelegate {
         self.spinner.startAnimating()
         appartList = []
         firstly{
-            SearchModel.fetchAppartList()
+            SearchModel.fetchAppartList(search: "")
         }.done { [self] data in
             // if ok
             print(data)
@@ -116,6 +118,7 @@ class MapAppartController: UIViewController, MKMapViewDelegate {
                 name.text = appart?.title
                 address.text = appart?.address
                 phone.text = "\(appart?.priceShort ?? 0) ₽ в сутки"
+                photo.sd_setImage(with: URL(string: appart?.pictures[0] ?? ""), placeholderImage: UIImage(named: "Guest"))
                 
                 UIView.animate(withDuration: 0.5, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
                     self.infoViewBottomConstraint.constant -= self.appartInfoView.bounds.height

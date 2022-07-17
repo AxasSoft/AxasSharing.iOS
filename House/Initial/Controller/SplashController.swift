@@ -19,7 +19,7 @@ class SplashController: UIViewController {
             var sBoard = UIStoryboard(name: "SignUp", bundle: .main)
             
             if UserDefaults.standard.bool(forKey: "isRegistration"){
-                sBoard = UIStoryboard(name: "TabBar", bundle: .main)
+                sBoard = UIStoryboard(name: "Search", bundle: .main)
             }
             
             let vc = sBoard.instantiateInitialViewController()

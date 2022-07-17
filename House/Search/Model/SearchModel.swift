@@ -11,8 +11,9 @@ import PromiseKit
 struct SearchModel{
     
     // fetch appart list
-    static func fetchAppartList() -> Promise<AppartsResponse>{
-        let url = Constants.baseURL.appendingPathComponent("/flats/")
+    static func fetchAppartList(search: String) -> Promise<AppartsResponse>{
+        var url = Constants.baseURL.appendingPathComponent("/flats/")
+        url = url.appending("search", value: "\(search)")
         return CoreNetwork.request(method: .GET(url: url))
     }
     // fetch one appart
